@@ -12,7 +12,7 @@ const Navbar = () => {
     <>
       <nav className="w-full px-10 py-4 bg-black backdrop-blur-md fixed top-0 left-0 z-40 border-b border-white/10">
         <div className="container mx-auto flex justify-between items-center">
-          <Link to="/"><div className="text-yellow text-2xl font-bold">Portfolio</div></Link>
+          <div className="text-yellow text-2xl font-bold">Portfolio</div>
           <div className="max-sm:hidden flex gap-4 font-bold">
             <Link to="/" className="text-white mx-2 line_effect">Home</Link>
             <Link to="/about" className="text-white mx-2 line_effect">About</Link>

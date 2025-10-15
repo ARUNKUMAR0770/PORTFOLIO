@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './component/Navbar'
 import Home from './component/Home'
 import About from './component/About'
@@ -7,10 +7,9 @@ import Projects from './component/Projects'
 import Contact from './component/Contact'
 import Skills from './component/Skills'
 
-
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,7 +18,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
