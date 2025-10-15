@@ -1,0 +1,92 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a0a0a;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+img{
+  height: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+img:hover{
+    transform: scale(1.05);
+    outline: 2px solid var(--color-yellow);
+}
+/* Hide the range input thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+}
+
+@theme{
+    --color-blue: #0087ca;
+    --color-dark: #002b45;
+    --color-yellow: #ffdd57;
+    --color-red: #e03c31;
+    --color-black:#0a0a0a;
+    --font-poppins: 'Poppins', serif;
+    --font-outfit: 'Outfit', serif;
+    --font-zalando: 'Zalando Sans Expanded', serif;
+    --font-montserrat: 'Montserrat', serif;
+    --font-inter: 'Inter', serif;
+    --font-bree: "Bree Serif", serif;
+    --font-gravitas: "Gravitas One", serif;
+}
+
+
+@layer utilities {
+  .menu-hover{
+    @apply w-[75%] text-center text-white mx-2 hover:bg-yellow rounded-2xl p-4 hover:text-black transition-all ease-in-out duration-300;
+  }
+
+}
+
+
+
+.line_effect {
+  position: relative; 
+  display: inline-block;
+}
+
+.line_effect::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0); 
+  height: 2px;
+  bottom: -2px; 
+  left: 0;
+  background-color: var(--color-yellow);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.line_effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
