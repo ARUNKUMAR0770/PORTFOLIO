@@ -26,6 +26,10 @@ const Projects = () => {
           <a href="https://arunkumar0770.github.io/TODO/" className='w-full'><img src={todo} alt="todo" className='w-full rounded-lg shadow-md' /></a>
           <h2 className='text-2xl font-semibold mt-4'>Todo App</h2>
       </div>
+        <div className="w-[350px] flex flex-col items-center">
+          <a href="https://note-app-frontend-smnd.onrender.com" className='w-full'><img src={todo} alt="todo" className='w-full rounded-lg shadow-md' /></a>
+          <h2 className='text-2xl font-semibold mt-4'>Note-app</h2>
+      </div>
       </div>
     </div>
   )
