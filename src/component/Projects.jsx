@@ -3,6 +3,7 @@ import mathquiz from '../assets/mathquiz-img.jpg'
 import qrcode from '../assets/qr-code.jpg'
 import passgen from '../assets/passgen.png'
 import todo from '../assets/todo.jpg'
+import note from '../assets/noteapp.jpeg'
 
 
 const Projects = () => {
@@ -27,7 +28,7 @@ const Projects = () => {
           <h2 className='text-2xl font-semibold mt-4'>Todo App</h2>
       </div>
         <div className="w-[350px] flex flex-col items-center">
-          <a href="https://note-app-frontend-smnd.onrender.com" className='w-full'><img src={todo} alt="todo" className='w-full rounded-lg shadow-md' /></a>
+          <a href="https://note-app-frontend-smnd.onrender.com" className='w-full'><img src={note} alt="todo" className='w-full rounded-lg shadow-md' /></a>
           <h2 className='text-2xl font-semibold mt-4'>Note-app</h2>
       </div>
       </div>
